@@ -16,3 +16,19 @@
 .idea/vcs.xml
 
 .idea/workspace.xml
+
+.idea/artifacts/server_micro_services_war_exploded.xml
+
+.idea/libraries/Maven__junit_junit_3_8_1.xml
+
+.idea/artifacts/server_micro_services_war.xml
+
+client.android.html5/client.android.html5.iml
+
+client.desktop.web/client.desktop.web.iml
+
+client.android.html5/client.android.html5.iml
+
+client.desktop.web/client.desktop.web.iml
+
+*.iml

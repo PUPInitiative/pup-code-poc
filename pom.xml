@@ -13,9 +13,6 @@
         <module>client.desktop.web</module>
         <module>client.android.html5</module>
         <module>server.coordination.services</module>
-        <module>server.event.micro.services</module>
-        <module>server.coordination.services</module>
-        <module>server.coordination.services</module>
         <module>server.micro.services</module>
     </modules>
 
