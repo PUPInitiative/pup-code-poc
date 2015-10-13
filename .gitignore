@@ -32,3 +32,17 @@ client.android.html5/client.android.html5.iml
 client.desktop.web/client.desktop.web.iml
 
 *.iml
+
+.DS_Store
+
+.DS_Store
+
+.DS_Store
+
+client.android.html5/target/client.android.html5-1.0-SNAPSHOT.jar
+
+client.android.html5/target/maven-archiver/pom.properties
+
+client.desktop.web/target/maven-archiver/pom.properties
+
+client.desktop.web/target/client.desktop.web-1.0-SNAPSHOT.jar
