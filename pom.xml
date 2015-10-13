@@ -14,6 +14,8 @@
         <module>client.android.html5</module>
         <module>server.coordination.services</module>
         <module>server.micro.services</module>
+        <module>pup-code-blog-en</module>
+        <module>pup-code-blog-fr</module>
     </modules>
 
 
