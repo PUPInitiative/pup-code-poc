@@ -1,48 +1,19 @@
 
 *.iml
 
-.idea/misc.xml
+.idea/*
 
-.idea/copyright/profiles_settings.xml
-
-.idea/compiler.xml
-
-.idea/.name
-
-.idea/modules.xml
-
-.idea/uiDesigner.xml
-
-.idea/vcs.xml
-
-.idea/workspace.xml
-
-.idea/artifacts/server_micro_services_war_exploded.xml
-
-.idea/libraries/Maven__junit_junit_3_8_1.xml
-
-.idea/artifacts/server_micro_services_war.xml
-
-client.android.html5/client.android.html5.iml
-
-client.desktop.web/client.desktop.web.iml
-
-client.android.html5/client.android.html5.iml
-
-client.desktop.web/client.desktop.web.iml
+.idea/misc.xmlclient.desktop.web/client.desktop.web.iml
 
 *.iml
 
 .DS_Store
 
 .DS_Store
+simpleimpoc/
 
 .DS_Store
 
-client.android.html5/target/client.android.html5-1.0-SNAPSHOT.jar
+**/target/*
 
-client.android.html5/target/maven-archiver/pom.properties
-
-client.desktop.web/target/maven-archiver/pom.properties
-
-client.desktop.web/target/client.desktop.web-1.0-SNAPSHOT.jar
+server.coordination.services/jbossews

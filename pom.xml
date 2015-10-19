@@ -16,6 +16,7 @@
         <module>server.micro.services</module>
         <module>pup-code-blog-en</module>
         <module>pup-code-blog-fr</module>
+        <module>pup-core-web</module>
     </modules>
 
 
