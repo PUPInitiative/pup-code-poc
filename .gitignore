@@ -5,15 +5,11 @@
 
 .idea/misc.xmlclient.desktop.web/client.desktop.web.iml
 
-*.iml
-
 .DS_Store
 
-.DS_Store
 simpleimpoc/
 
-.DS_Store
-
+/server.coordination.services/target
 **/target/*
 
 server.coordination.services/jbossews

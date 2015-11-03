@@ -15,21 +15,21 @@
 
         colors = window.screen.colorDepth;
         //document.form.color.value = Math.pow(2, colors);
-//        if (window.screen.fontSmoothingEnabled == true)
-//            document.form.fonts.value = "Yes";
-//        else document.form.fonts.value = "No";
+        if (window.screen.fontSmoothingEnabled == true)
+            document.form.fonts.value = "Yes";
+        else document.form.fonts.value = "No";
 
-//        document.form.navigator.value = navigator.appName;
-//        document.form.version.value = navigator.appVersion;
-//        document.form.colordepth.value = window.screen.colorDepth;
-//        document.form.width.value = window.screen.width;
-//        document.form.height.value = window.screen.height;
-//        document.form.maxwidth.value = window.screen.availWidth;
-//        document.form.maxheight.value = window.screen.availHeight;
-//        document.form.codename.value = navigator.appCodeName;
-//        document.form.platform.value = navigator.platform;
-//        if (navigator.javaEnabled() < 1) document.form.java.value = "No";
-//        if (navigator.javaEnabled() == 1) document.form.java.value = "Yes";
+        document.form.navigator.value = navigator.appName;
+        document.form.version.value = navigator.appVersion;
+        document.form.colordepth.value = window.screen.colorDepth;
+        document.form.width.value = window.screen.width;
+        document.form.height.value = window.screen.height;
+        document.form.maxwidth.value = window.screen.availWidth;
+        document.form.maxheight.value = window.screen.availHeight;
+        document.form.codename.value = navigator.appCodeName;
+        document.form.platform.value = navigator.platform;
+        if (navigator.javaEnabled() < 1) document.form.java.value = "No";
+        if (navigator.javaEnabled() == 1) document.form.java.value = "Yes";
 
         if (navigator.javaEnabled() && (navigator.appName != "Microsoft Internet Explorer")) {
             //alert(navigator.location.hostname);
@@ -49,7 +49,6 @@
     }
     // end -->
 </script>
-
 <!-- STEP TWO: Insert the onLoad event handler into your BODY tag  -->
 
 
