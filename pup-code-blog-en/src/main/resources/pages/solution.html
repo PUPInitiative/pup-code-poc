@@ -1,0 +1,109 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+    <h3>
+        A Peer Definition</h3>
+
+    <div>
+        <br/></div>
+    <div class="separator" style="clear: both; text-align: left;">
+        <iframe itemprop="image" height="480" src="https://drive.google.com/file/d/0B9WCtg528IaHNExmbmFyelN2TFk/preview"
+                width="700"></iframe>
+    </div>
+    <div class="separator" style="clear: both; text-align: left;">
+    </div>
+    <ul>
+        <li>A Peer is a People, who have an identity, that the system must preserve.</li>
+        <li>A Peer can have multiple devices, or just one, who can be: Smartphone, Tablet, home Computer or Laptop.</li>
+        <li>Each device own an Operating System. For each Operating System, un "PUP Code Agent" need to be installed.
+        </li>
+        <li>Each device have one or more Internet Interface: phone service data like 3/4 G, wifi, Bluetooth.</li>
+        <li>Each device of each peer, contains a PUP Code Agent to dialog with other devices, the other of the peer, on
+            each peer containing in its network.
+        </li>
+    </ul>
+    <div>
+        With these characteristics, each Peer of the System, can communicate directly with the other Peers of the
+        "Friends Network", on making TCP/IP connection on the other devices of them friends.&nbsp;</div>
+    <div>
+        <br/></div>
+    <div>
+        But for having this feature, each active device, need to have the configuration IP of the other devices to make
+        connections. Even some devices have multiple Internet Interface.&nbsp;</div>
+    <div>
+        <br/></div>
+    <div>
+        So the agent installed on each devices should be aware of the interface change event.&nbsp;</div>
+    <div>
+        <br/></div>
+    <div>
+        <h3>
+            A new IT Model, finding its inspiration in the P2P model</h3>
+
+        <div>
+            <br/></div>
+        <div class="separator" style="clear: both;">
+        </div>
+        <div>
+            <div class="separator" style="clear: both;">
+                <a href="http://3.bp.blogspot.com/-aTKlGFPz0OU/Vd9QOYesj4I/AAAAAAAAAJo/vEdMItKvP8U/s1600/base%2Bsystem.png"
+                   imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+
+                    <img border="0" height="419"
+                         src="http://3.bp.blogspot.com/-aTKlGFPz0OU/Vd9QOYesj4I/AAAAAAAAAJo/vEdMItKvP8U/s640/base%2Bsystem.png"
+                         width="640"/></a></div>
+            <div class="separator" style="clear: both;">
+                <br/></div>
+            <div class="separator" style="clear: both;">
+                The coordination server store only the configuration of each "Network of friends", anonymously, listen
+                of each networks devices configuration change event, and push the configuration to each device of the
+                Network.
+            </div>
+            <div class="separator" style="clear: both;">
+                <br/></div>
+            <div class="separator" style="clear: both;">
+                It is the same mechanism than torrent file with Peer exchange Server. It give the TCP/IP configuration
+                of the peer of the network having the desired resource.&nbsp;</div>
+            <div class="separator" style="clear: both;">
+                <br/></div>
+            <div class="separator" style="clear: both;">
+                In our case, the Coordination Server will listen the change IP event, relayed by the agents installed on
+                the devices. And will push the configuration of the updated Network configuration to the other devices
+                of the network.
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <h3>
+        About the security</h3>
+
+    <div>
+        <br/></div>
+    <div>
+        Some ideas to ensure the security of the system :
+    </div>
+    <div>
+        <ul>
+            <li>Communication of devices with the coordination server could be certificate based.</li>
+            <li>Set up filters for DDoS attack and ensure redundancy.</li>
+            <li>Encryption of data, with a specific key pair certificate by "Friends&nbsp;Network". We can imagine a
+                certification&nbsp;authority, with a root trust certificate, and the system generate certificates and
+                serve these&nbsp;certificate to each peer, to have a based certificate dialog by Network.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <br/>
+
+        <h3 style="text-align: left;">
+            About the Devices Synchronisation</h3>
+    </div>
+    <br/>
+
+    <div>
+        A Peer have multiple Devices, and some ideas need to emerge for this stuff: I see myself, i don't have really
+        the contacts on each devices, because someone are out of scope of the synchronization ... So it can be a
+        problem, and some issues must to be found.
+    </div>
+    <div>
+        <br/></div>
+</div>
