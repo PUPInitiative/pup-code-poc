@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>info.pupcode.model.cfg</OriginalElement>
+  <nodes>
+    <node x="-51.0" y="149.0">info.pupcode.model.cfg.Device</node>
+    <node x="-62.0" y="27.0">info.pupcode.model.cfg.Identity</node>
+    <node x="-112.0" y="-87.0">info.pupcode.model.cfg.FriendNetworkConfig</node>
+    <node x="-234.0" y="120.0">info.pupcode.model.cfg.Peer</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="88.5" y="88.5" />
+  <SelectedNodes>
+    <node>info.pupcode.model.cfg.Peer</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
