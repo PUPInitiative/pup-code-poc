@@ -10,13 +10,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>client.desktop.web</module>
-        <module>client.android.html5</module>
-        <module>server.coordination.services</module>
-        <module>server.micro.services</module>
-        <module>pup-code-blog-en</module>
-        <module>pup-code-blog-fr</module>
-        <module>pup-core-web</module>
+        <!-- <module>client.desktop.web</module>
+         <module>client.android.html5</module>
+         <module>server.coordination.services</module>
+         <module>server.micro.services</module>
+         <module>pup-code-blog-en</module>
+         <module>pup-code-blog-fr</module>
+         <module>pup-core-web</module> -->
         <module>pup-code-domain</module>
     </modules>
 
