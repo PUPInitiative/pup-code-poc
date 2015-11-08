@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+    <entity class="info.pupcode.model.cfg.FriendNetworkConfig"/>
+    <entity class="info.pupcode.model.cfg.Identity"/>
+    <entity class="info.pupcode.model.cfg.Device"/>
+    <entity class="info.pupcode.model.cfg.Peer"/>
+    <entity class="info.pupcode.model.cfg.PhoneNumber"/>
+    <entity class="info.pupcode.model.cfg.EmailAddress"/>
+</entity-mappings>

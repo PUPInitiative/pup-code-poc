@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:concordion="http://www.concordion.org/2007/concordion" lang="en">
+<head>
+    <title>Title</title>
+</head>
+<body>
+Given a User named <span concordion:set="#nickname">Jerry</span> and have an email
+<span concordion:set="#email">fabien@pupcodeinitiative.info</span>
+when i call the service store <span concordion:execute="#identiy = givenIdentiyFor(#nickname, #email)"/>
+</body>
+</html>
