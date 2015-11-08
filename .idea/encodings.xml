@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/appengine-try-java-master" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client.android.html5" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client.desktop.web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pup-code-blog-en" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pup-code-blog-fr" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pup-code-domain" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pup-core-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server.coordination.services" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server.coordination.services/jbossews" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/simpleimpoc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server.micro.services" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
