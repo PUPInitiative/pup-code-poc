@@ -6,7 +6,7 @@
     <groupId>pup.code.poc</groupId>
     <artifactId>pup-code-poc</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2-SNAPHOST</version>
+    <version>1.0.2-SNAPSHOST</version>
 
     <distributionManagement>
 
@@ -46,7 +46,7 @@
     <scm>
         <connection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</connection>
         <developerConnection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
-        <tag>1.0.2-SNAPHOST</tag>
+        <tag>1.0.2-SNAPSHOST</tag>
         <url>https://github.com/PUPInitiative</url>
     </scm>
     <build>
