@@ -5,7 +5,7 @@
     <groupId>pup.code.poc</groupId>
     <artifactId>pup-code-poc</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.10-SNAPSHOT</version>
+    <version>1.0.10</version>
 
     <distributionManagement>
         <!--<snapshotRepository>-->
@@ -43,7 +43,7 @@
     <scm>
         <connection>scm:git:https://github.com/PUPInitiative/pup-code-poc.git</connection>
         <developerConnection>scm:git:https://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
-        <tag>pup-code-poc-1.0.0-SNAPSHOT</tag>
+        <tag>pup-code-poc-1.0.10</tag>
         <url>https://github.com/PUPInitiative</url>
     </scm>
     <build>
