@@ -17,9 +17,8 @@
         <!--<url>http://localhost:8085/nexus/content/repositories/pup-code-release</url>-->
         <!--</repository>-->
         <repository>
-            <id>nexus</id>
-            <name>Nexus Releases</name>
-            <url>http://localhost:8085/nexus/service/local/staging/deploy/maven2</url>
+            <id>releases</id>
+            <url>http://localhost:8085/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
