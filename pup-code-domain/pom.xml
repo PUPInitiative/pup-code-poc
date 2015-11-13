@@ -3,7 +3,7 @@
     <parent>
         <artifactId>pup-code-poc</artifactId>
         <groupId>pup.code.poc</groupId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.0-SNASHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
