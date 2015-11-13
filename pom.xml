@@ -12,7 +12,7 @@
 
         <snapshotRepository>
             <id>pup-code</id>
-            <url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>
+            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-snapshot</url>
         </snapshotRepository>
         <repository>
             <id>pup-code</id>
