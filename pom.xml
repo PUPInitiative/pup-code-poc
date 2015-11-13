@@ -24,7 +24,7 @@
             <url>http://nexus.pupcodeinitiative.info/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
-            <id>nexus</id>
+            <id>internal.repo</id>
             <name>Nexus Snapshot</name>
             <url>http://nexus.pupcodeinitiative.info/repositories/snapshots</url>
         </snapshotRepository>
