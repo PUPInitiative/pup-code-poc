@@ -43,7 +43,7 @@
 
     <scm>
         <connection>scm:jgit:https:git@github.com:PUPInitiative/pup-code-poc.git</connection>
-        <developerConnection>scm:jgit:https://git@github.com:PUPInitiative/pup-code-poc.git</developerConnection>
+        <developerConnection>scm:jgit:https://github.com:PUPInitiative/pup-code-poc.git</developerConnection>
         <tag>pup-code-poc-1.0.0-SNAPSHOT</tag>
         <url>https://github.com/PUPInitiative</url>
     </scm>
