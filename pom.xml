@@ -8,23 +8,23 @@
     <version>1.0.10-SNAPSHOT</version>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>pup-code-snapshot</id>
-            <url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>
-        </snapshotRepository>
-        <repository>
-            <id>pup-code-release</id>
-            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>
-        </repository>
-        <!--<repository>-->
-        <!--<id>releases</id>-->
-        <!--<url>http://localhost:8085/nexus/content/repositories/releases</url>-->
-        <!--</repository>-->
         <!--<snapshotRepository>-->
-        <!--<id>nexus</id>-->
-        <!--<name>Nexus Snapshot</name>-->
-        <!--<url>http://localhost:8085/nexus/content/repositories/snapshots</url>-->
+            <!--<id>pup-code-snapshot</id>-->
+            <!--<url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>-->
         <!--</snapshotRepository>-->
+        <!--<repository>-->
+            <!--<id>pup-code-release</id>-->
+            <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
+        <!--</repository>-->
+        <repository>
+        <id>releases</id>
+        <url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+        <id>nexus</id>
+        <name>Nexus Snapshot</name>
+        <url>http://nexus.pupcodeinitiative.info/content/repositories/snapshots</url>
+        </snapshotRepository>
 
     </distributionManagement>
     <pluginRepositories>
