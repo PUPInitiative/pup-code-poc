@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pup.code.poc</groupId>
@@ -8,22 +9,29 @@
     <version>1.0.11-SNAPSHOT</version>
 
     <distributionManagement>
+
+
+        <repository>
+            <id>internal.repo</id>
+            <name>PUP Code Internal Repository</name>
+            <url>http://nexus.pupcodeinitiative.info/content/repositories/</url>
+        </repository>
         <!--<snapshotRepository>-->
-            <!--<id>pup-code-snapshot</id>-->
-            <!--<url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>-->
+        <!--<id>pup-code-snapshot</id>-->
+        <!--<url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>-->
         <!--</snapshotRepository>-->
         <!--<repository>-->
-            <!--<id>pup-code-release</id>-->
-            <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
+        <!--<id>pup-code-release</id>-->
+        <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
         <!--</repository>-->
         <repository>
-        <id>releases</id>
-        <url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/releases</url>
+            <id>releases</id>
+            <url>http://nexus.pupcodeinitiative.info/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
-        <id>nexus</id>
-        <name>Nexus Snapshot</name>
-        <url>http://nexus.pupcodeinitiative.info/content/repositories/snapshots</url>
+            <id>nexus</id>
+            <name>Nexus Snapshot</name>
+            <url>http://nexus.pupcodeinitiative.info/repositories/snapshots</url>
         </snapshotRepository>
 
     </distributionManagement>
@@ -49,77 +57,107 @@
     <build>
         <plugins>
 
-
+        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.3</version>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.3</version>
                 <configuration>
-                    <providerImplementations>
-                        <git>jgit</git>
-                    </providerImplementations>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-jgit</artifactId>
-                        <version>1.9.4</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.9.4</version>
-                <configuration>
-                    <providerImplementations>
-                        <git>jgit</git>
-                    </providerImplementations>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-jgit</artifactId>
-                        <version>1.9.4</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.4</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.wagon</groupId>
-                        <artifactId>wagon-webdav-jackrabbit</artifactId>
-                        <version>2.8</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <locales>en,fr</locales>
+                    <show>private</show>
+                    <nohelp>true</nohelp>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    <modules>
-        <!-- <module>client.desktop.web</module>
-         <module>client.android.html5</module>
-         <module>server.coordination.services</module>
-         <module>server.micro.services</module>
-         <module>pup-code-blog-en</module>
-         <module>pup-code-blog-fr</module>
-         <module>pup-core-web</module> -->
-        <module>pup-code-domain</module>
-    </modules>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+            <providerImplementations>
+                <git>jgit</git>
+            </providerImplementations>
+        </configuration>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.maven.scm</groupId>
+                <artifactId>maven-scm-provider-jgit</artifactId>
+                <version>1.9.4</version>
+            </dependency>
+        </dependencies>
+    </plugin>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-plugin</artifactId>
+        <version>1.9.4</version>
+        <configuration>
+            <providerImplementations>
+                <git>jgit</git>
+            </providerImplementations>
+        </configuration>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.maven.scm</groupId>
+                <artifactId>maven-scm-provider-jgit</artifactId>
+                <version>1.9.4</version>
+            </dependency>
+        </dependencies>
+    </plugin>
+    <plugin>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.4</version>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav-jackrabbit</artifactId>
+                <version>2.8</version>
+            </dependency>
+        </dependencies>
+        <configuration>
+            <locales>en,fr</locales>
+        </configuration>
+    </plugin>
+</plugins>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <spring.release>4.2.1.RELEASE</spring.release>
-        <hibernate.version>4.3.11.Final</hibernate.version>
-        <slf4j.version>1.7.7</slf4j.version>
-        <org.springframework-version>4.2.1.RELEASE</org.springframework-version>
-        <org.springframework-version>4.2.1.RELEASE</org.springframework-version>
+        </build>
+<build>
+<plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+            <execution>
+                <id>attach-sources</id>
+                <phase>verify</phase>
+                <goals>
+                    <goal>jar-no-fork</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+</plugins>
+</build>
+<modules>
+<!-- <module>client.desktop.web</module>
+ <module>client.android.html5</module>
+ <module>server.coordination.services</module>
+ <module>server.micro.services</module>
+ <module>pup-code-blog-en</module>
+ <module>pup-code-blog-fr</module>
+ <module>pup-core-web</module> -->
+<module>pup-code-domain</module>
+</modules>
 
-    </properties>
-</project>
+<properties>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<maven.compiler.source>1.6</maven.compiler.source>
+<maven.compiler.target>1.6</maven.compiler.target>
+<spring.release>4.2.1.RELEASE</spring.release>
+<hibernate.version>4.3.11.Final</hibernate.version>
+<slf4j.version>1.7.7</slf4j.version>
+<org.springframework-version>4.2.1.RELEASE</org.springframework-version>
+<org.springframework-version>4.2.1.RELEASE</org.springframework-version>
+
+</properties>
+        </project>
