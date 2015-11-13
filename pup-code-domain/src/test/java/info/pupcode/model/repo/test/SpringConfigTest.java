@@ -4,23 +4,22 @@ import info.pupcode.model.cfg.FriendNetworkConfig;
 import info.pupcode.model.cfg.Identity;
 import org.jetbrains.annotations.NotNull;
 import org.joda.time.DateTime;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 /**
  * Created by fabientronche1 on 07.11.15.
  */
 @Configuration
+@ImportResource(value = {"/applicationContext.xml"})
+@ComponentScan("info.pupcode.model.**")
 public class SpringConfigTest {
 
     private static int CFG_COUNTER = 0;
 
     @Bean
     @Scope("prototype")
-    public
     @NotNull
-    FriendNetworkConfig friendNetworkConfig() {
+    public FriendNetworkConfig friendNetworkConfig() {
 
         FriendNetworkConfig networkConfig = new FriendNetworkConfig();
         networkConfig.setName("Network config test " + CFG_COUNTER);
@@ -33,9 +32,8 @@ public class SpringConfigTest {
 
     @Bean
     @Scope("prototype")
-    public
     @NotNull
-    Identity identity() {
+    public Identity identity() {
 
         Identity identity = new Identity();
         return identity;

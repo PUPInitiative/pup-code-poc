@@ -5,7 +5,8 @@
 </head>
 <body>
 Given a User named <span concordion:set="#nickname">Jerry</span> and have an email
-<span concordion:set="#email">fabien@pupcodeinitiative.info</span>
-when i call the service store <span concordion:execute="#identiy = givenIdentiyFor(#nickname, #email)"/>
+<span concordion:set="#email">fabien@pupcodeinitiative.info</span>  <span concordion:execute="#result = givenIdentiyNameFor(#nickname, #email)"/>, the Identity
+received is named <span concordion:assertEquals="#result.nickname" >Jerry</span> and have an his email is <span concordion:assertEquals="#result.email">fabien@pupcodeinitiative.info</span>
+when i call the service store <span concordion:execute="#result = storeIdentityService(#result)"/> the number  of identities is <span   concordion:assertEquals="#result">1</span>
 </body>
 </html>

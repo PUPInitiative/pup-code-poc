@@ -2,37 +2,26 @@ package info.pupcode.model.repo.test;
 
 import info.pupcode.model.cfg.FriendNetworkConfig;
 import info.pupcode.model.cfg.Identity;
+import info.pupcode.model.repo.IdentityRepository;
+import junit.framework.Assert;
 import org.concordion.integration.junit4.ConcordionRunner;
-import org.hibernate.envers.Audited;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 
-import javax.swing.*;
+import javax.annotation.Resource;
 
 /**
  * Created by fabientronche1 on 07.11.15.
  */
 @RunWith(ConcordionRunner.class)
-@ContextConfiguration(locations = {"/applicationContext.xml"})
-public class NetworkConfigCreationFixture {
+public class NetworkConfigCreationFixture extends AbstractConcordionFixture {
 
-    @Autowired
-    private SpringConfigTest springConfigTest;
 
-    @Before
-    public void setUp() {
-
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
-        if (springConfigTest == null) {
-            springConfigTest = (SpringConfigTest) applicationContext.getBean(SpringConfigTest.class.getName());
-        }
-    }
-
-    public Identity givenIdentiyFor(String nickname, String email) {
+    public Identity givenIdentiyNameFor(String nickname, String email) {
 
         Identity identity = springConfigTest.identity();
         identity.setNickname(nickname);
@@ -43,5 +32,11 @@ public class NetworkConfigCreationFixture {
     public FriendNetworkConfig givenNewFriendNetworkConfig() {
 
         return springConfigTest.friendNetworkConfig();
+    }
+
+    public Long storeIdentityService(Identity identity) {
+        IdentityRepository identityRepository = applicationContext.getBean(IdentityRepository.class);
+        Identity identity1 = identityRepository.save(identity);
+        return identity1.getId();
     }
 }
