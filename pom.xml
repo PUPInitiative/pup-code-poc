@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pup.code.poc</groupId>
@@ -11,12 +12,12 @@
 
 
         <!--<snapshotRepository>-->
-            <!--<id>pup-code</id>-->
-            <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-snapshot</url>-->
+        <!--<id>pup-code</id>-->
+        <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-snapshot</url>-->
         <!--</snapshotRepository>-->
         <!--<repository>-->
-            <!--<id>pup-code</id>-->
-            <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
+        <!--<id>pup-code</id>-->
+        <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
         <!--</repository>-->
         <repository>
             <id>internal.repo</id>
@@ -45,7 +46,7 @@
     <scm>
         <connection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</connection>
         <developerConnection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
-
+        <tag>1.0.2-SNAPHOST</tag>
         <url>https://github.com/PUPInitiative</url>
     </scm>
     <build>
