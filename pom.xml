@@ -20,7 +20,7 @@
         <!--</repository>-->
         <repository>
             <id>nexus</id>
-            <url>http://localhost:8085/nexus/content/repositories/pup-code-release</url>
+            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
