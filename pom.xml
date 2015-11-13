@@ -10,11 +10,11 @@
     <distributionManagement>
         <snapshotRepository>
             <id>pup-code-snapshot</id>
-            <url>http://localhost:8085/nexus/content/repositories/pup-code-snapshot</url>
+            <url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>
         </snapshotRepository>
         <repository>
             <id>pup-code-release</id>
-            <url>http://localhost:8085/nexus/content/repositories/pup-code-release</url>
+            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>
         </repository>
         <!--<repository>-->
         <!--<id>releases</id>-->
