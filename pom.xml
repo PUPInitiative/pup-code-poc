@@ -11,11 +11,7 @@
     <distributionManagement>
 
 
-        <repository>
-            <id>internal.repo</id>
-            <name>PUP Code Internal Repository</name>
-            <url>http://nexus.pupcodeinitiative.info/</url>
-        </repository>
+
         <!--<snapshotRepository>-->
         <!--<id>pup-code-snapshot</id>-->
         <!--<url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>-->
@@ -25,7 +21,7 @@
         <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
         <!--</repository>-->
         <repository>
-            <id>releases</id>
+            <id>internal.repo</id>
             <url>http://nexus.pupcodeinitiative.info/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
