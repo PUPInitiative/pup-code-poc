@@ -30,7 +30,7 @@
     </distributionManagement>
     <scm>
         <connection>scm:git:https://github.com/PUPInitiative/pup-code-poc.git</connection>
-        <developerConnection>scm:git:https://'fabien@pupcodeinitiative.info:W6s6v65a'/github.com/PUPInitiative/pup-code-poc.git</developerConnection>
+        <developerConnection>scm:git:https://fabien@pupcodeinitiative.info:W6s6v65a/github.com/PUPInitiative/pup-code-poc.git</developerConnection>
         <tag>pup-code-poc-1.0.0-SNAPSHOT</tag>
         <url>http://127.0.0.1/websvn/my-project</url>
     </scm>
