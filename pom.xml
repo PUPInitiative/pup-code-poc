@@ -6,7 +6,7 @@
     <groupId>pup.code.poc</groupId>
     <artifactId>pup-code-poc</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2-SNAPSHOST</version>
+    <version>1.0.1</version>
 
     <distributionManagement>
 
@@ -20,33 +20,22 @@
         <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
         <!--</repository>-->
         <repository>
-            <id>internal.repo</id>
-            <url>http://nexus.pupcodeinitiative.info/content/repositories/releases</url>
+            <id>nexus</id>
+            <url>http://localhost:8085/nexus/content/repositories/pup-code-release</url>
         </repository>
         <snapshotRepository>
-            <id>internal.repo</id>
+            <id>nexus</id>
             <name>Nexus Snapshot</name>
-            <url>http://nexus.pupcodeinitiative.info/content/repositories/snapshots</url>
+            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-snapshot</url>
         </snapshotRepository>
 
     </distributionManagement>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>Ouroboros-CI Release</id>
-            <name>Ouroboros Jenkins Maven Repo</name>
-            <url>https://repository-ouroboros.forge.cloudbees.com/release/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>Ouroboros-CI Snapshot</id>
-            <name>Ouroboros Jenkins Maven Repo</name>
-            <url>https://repository-ouroboros.forge.cloudbees.com/snapshot/</url>
-        </pluginRepository>
-    </pluginRepositories>
+
 
     <scm>
         <connection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</connection>
         <developerConnection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
-        <tag>1.0.1-SNAPSHOST</tag>
+        <tag>1.0.1-SNAPSHOT</tag>
         <url>https://github.com/PUPInitiative</url>
     </scm>
     <build>
