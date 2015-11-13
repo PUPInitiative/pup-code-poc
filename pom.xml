@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pup.code.poc</groupId>
@@ -10,24 +11,23 @@
     <distributionManagement>
 
 
-
-        <!--<snapshotRepository>-->
-        <!--<id>pup-code-snapshot</id>-->
-        <!--<url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>-->
-        <!--</snapshotRepository>-->
-        <!--<repository>-->
-        <!--<id>pup-code-release</id>-->
-        <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
-        <!--</repository>-->
-        <repository>
-            <id>internal.repo</id>
-            <url>http://nexus.pupcodeinitiative.info/content/repositories/releases</url>
-        </repository>
         <snapshotRepository>
-            <id>internal.repo</id>
-            <name>Nexus Snapshot</name>
-            <url>http://nexus.pupcodeinitiative.info/repositories/snapshots</url>
+            <id>pup-code</id>
+            <url>http://nexus.pupcodeinitiative.info/nexus/content/repositories/pup-code-snapshot</url>
         </snapshotRepository>
+        <repository>
+            <id>pup-code</id>
+            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>
+        </repository>
+        <!--<repository>-->
+        <!--<id>internal.repo</id>-->
+        <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/releases</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+        <!--<id>internal.repo</id>-->
+        <!--<name>Nexus Snapshot</name>-->
+        <!--<url>http://nexus.pupcodeinitiative.info/repositories/snapshots</url>-->
+        <!--</snapshotRepository>-->
 
     </distributionManagement>
     <pluginRepositories>
