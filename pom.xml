@@ -29,10 +29,10 @@
 
     </distributionManagement>
     <scm>
-        <connection>scm:git:git://github.com/PUPInitiative/pup-code-poc.git</connection>
-        <developerConnection>scm:git:git://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
+        <connection>scm:git:ssh:git@github.com:PUPInitiative/pup-code-poc.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:PUPInitiative/pup-code-poc.git</developerConnection>
         <tag>pup-code-poc-1.0.0-SNAPSHOT</tag>
-        <url>http://127.0.0.1/websvn/my-project</url>
+        <url>https://github.com/kevinsawicki/github-maven-example</url>
     </scm>
     <build>
         <plugins>
