@@ -5,7 +5,7 @@
     <groupId>pup.code.poc</groupId>
     <artifactId>pup-code-poc</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.25</version>
+    <version>1.0.25-SNAPSHOT</version>
 
     <distributionManagement>
         <repository>
@@ -21,8 +21,8 @@
 
 
     <scm>
-        <connection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</connection>
-        <developerConnection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
+        <connection>scm:git:https://github.com/PUPInitiative/pup-code-poc.git</connection>
+        <developerConnection>scm:git:https://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
         <url>https://github.com/PUPInitiative</url>
     </scm>
     <build>
@@ -36,42 +36,21 @@
                     <nohelp>true</nohelp>
                 </configuration>
             </plugin>
-
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.3</version>
-                <configuration>
-                    <providerImplementations>
-                        <git>jgit</git>
-                    </providerImplementations>
-                </configuration>
+                <version>2.3.2</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-jgit</artifactId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <!-- This version is necessary for use with git version 1.8.5 -->
                         <version>1.9.4</version>
                     </dependency>
                 </dependencies>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.9.4</version>
-                <configuration>
-                    <providerImplementations>
-                        <git>jgit</git>
-                    </providerImplementations>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-jgit</artifactId>
-                        <version>1.9.4</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
+
+
             <plugin>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.4</version>

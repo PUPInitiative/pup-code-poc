@@ -3,7 +3,7 @@
     <parent>
         <artifactId>pup-code-poc</artifactId>
         <groupId>pup.code.poc</groupId>
-        <version>1.0.25</version>
+        <version>1.0.25-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -22,9 +22,6 @@
         <org.springframework-version>4.2.1.RELEASE</org.springframework-version>
 
     </properties>
-
-
-
 
 
     <dependencies>
