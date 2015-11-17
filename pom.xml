@@ -5,19 +5,9 @@
     <groupId>pup.code.poc</groupId>
     <artifactId>pup-code-poc</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <distributionManagement>
-
-
-        <!--<snapshotRepository>-->
-        <!--<id>pup-code</id>-->
-        <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-snapshot</url>-->
-        <!--</snapshotRepository>-->
-        <!--<repository>-->
-        <!--<id>pup-code</id>-->
-        <!--<url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>-->
-        <!--</repository>-->
         <repository>
             <id>nexus</id>
             <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>
@@ -27,14 +17,13 @@
             <name>Nexus Snapshot</name>
             <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-snapshot</url>
         </snapshotRepository>
-
     </distributionManagement>
 
 
     <scm>
         <connection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</connection>
         <developerConnection>scm:jgit:https://github.com/PUPInitiative/pup-code-poc.git</developerConnection>
-        <tag>1.0.1-SNAPSHOT</tag>
+        <tag>1.0.3-SNAPSHOT</tag>
         <url>https://github.com/PUPInitiative</url>
     </scm>
     <build>
