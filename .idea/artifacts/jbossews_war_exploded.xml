@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="jbossews:war exploded">
-    <output-path>$PROJECT_DIR$/server.coordination.services/jbossews/target/jbossews-1.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/server.coordination.services/jbossews/target/jbossews-1.0.25-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -67,7 +67,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/server.coordination.services/jbossews/target/jbossews-1.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/server.coordination.services/jbossews/target/jbossews-1.0.25-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="jbossews/web/Web" />
     </root>
