@@ -9,13 +9,13 @@
 
     <distributionManagement>
         <repository>
-            <id>nexus</id>
-            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-release</url>
+            <id>internal.nexus</id>
+            <url>http://62.203.200.14/nexus/content/repositories/pup-code-release</url>
         </repository>
         <snapshotRepository>
-            <id>nexus</id>
+            <id>internal.nexus</id>
             <name>Nexus Snapshot</name>
-            <url>http://nexus.pupcodeinitiative.info/content/repositories/pup-code-snapshot</url>
+            <url>http://62.203.200.14/nexus/content/repositories/pup-code-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 
