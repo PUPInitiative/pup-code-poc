@@ -10,12 +10,12 @@
     <distributionManagement>
         <repository>
             <id>internal.nexus</id>
-            <url>http://62.203.200.14/nexus/content/repositories/pup-code-release</url>
+            <url>http://ftronche.internet-box.ch/nexus/content/repositories/pup-code-release</url>
         </repository>
         <snapshotRepository>
             <id>internal.nexus</id>
             <name>Nexus Snapshot</name>
-            <url>http://62.203.200.14/nexus/content/repositories/pup-code-snapshot/</url>
+            <url>http://ftronche.internet-box.ch/nexus/content/repositories/pup-code-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 
